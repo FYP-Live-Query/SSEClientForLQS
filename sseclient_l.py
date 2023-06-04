@@ -19,7 +19,7 @@ if __name__ == '__main__':
 
     while True:
         event = next(stream)
-        json_data = json.dumps(data)
+        json_data = json.dumps(event)
         time_gap = datetime.datetime.now().time() - json_data[1]
         print(f"event: {json_data[0]} \ntime: {time_gap}" )
 #         print(f"event: {event.event} \ndata: {event.data}")
